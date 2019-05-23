@@ -8,19 +8,19 @@ describe('EyesServiceTest', () => {
     browser.url('http://applitools.github.io/demo/TestPages/FramesTestPage/');
   });
 
-  it('checkWindow', () => {
+  it.skip('checkWindow', () => {
     browser.eyesCheckWindow('main');
   });
 
-  it('checkWindow - no title', () => {
+  it.skip('checkWindow - no title', () => {
     browser.eyesCheckWindow();
   });
 
-  it.skip('checkRegion', () => {
+  it('checkRegion', () => {
     browser.eyesCheckWindow('main', Target.region(By.id("overflowing-div")));
   });
 
-  it('checkFrame', () => {
+  it.skip('checkFrame', () => {
     browser.eyesCheckWindow('main', Target.frame("frame1"));
   });
 

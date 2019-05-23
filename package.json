@@ -7,12 +7,13 @@
   ],
   "main": "index.js",
   "scripts": {
+    "link": "npm link && npm link wdio-eyes-service",
     "test": "cd test && ../node_modules/.bin/wdio"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@applitools/eyes.webdriverio": "^2.3.1"
+    "@applitools/eyes.webdriverio": "^2.4.0"
   },
   "devDependencies": {
     "chromedriver": "^2.37.0",
